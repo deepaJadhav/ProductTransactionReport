@@ -25,7 +25,7 @@ public class CurrencyExchangeJPATest {
 	@Autowired
 	private TestExchangeValueRepository repository;
 	
-	 //@Test
+	// @Test
 	 public void addExchangeValueTest() throws URISyntaxException, IOException{
 		 ExchangeValue exchangevalue=new ExchangeValue("tCL","t1234","0001","003","texchange"
 					,"tproduct" ,"tsymbol",LocalDate.now(),1,5,LocalDate.now());

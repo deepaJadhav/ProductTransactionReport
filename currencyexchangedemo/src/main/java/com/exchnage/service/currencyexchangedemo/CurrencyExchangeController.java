@@ -60,27 +60,6 @@ public class CurrencyExchangeController {
 	@Value("${csvfile.path}")
 	private String csvFilePath;
 	
-	//@RequestBody
-	@PostMapping(value = "/currency-exchange/restTemplate")
-    ResponseEntity<String> addPerson() {
-		 RestTemplate restTemplate = new RestTemplate();
-		 Client client=new Client("abc","def");
-		 ResponseEntity<String> resentity =restTemplate.postForEntity("http://localhost:9000//currency-exchange/checkObject", client, String.class);
-		 logger.info("persistPerson");
-			List<Client> client1=new ArrayList();
-			client1.add(new Client("abc","def"));
-			client1.add(new Client("hjk","mno"));
-		    printconditionally(client1,(Conditionally)c1->c1.getClientnumber().startsWith("d"));
-	       return ResponseEntity.ok(""+resentity);		
-    }
-	
-	@PostMapping(value = "/currency-exchange/checkObject")
-    ResponseEntity<String> persistPerson(@Valid @RequestBody Client client,BindingResult result) {
-		 logger.info("persistPerson");
-		 if(result.hasErrors())
-        return ResponseEntity.ok("invalid");		
-    	return ResponseEntity.ok("Client is valid"+client.getClientnumber());
-    }
 	
 	@GetMapping("/currency-exchange/readinput")
 		public String retrieveExchangeValue
@@ -153,28 +132,11 @@ public class CurrencyExchangeController {
 						logger.error("writeCSVFile:exception"+ e.toString());
 					}
        		});
-			List<Client> client=new ArrayList();
-			client.add(new Client("abc","def"));
-			client.add(new Client("hjk","mno"));
 
-		    printconditionally(client,(Conditionally)c1->c1.getClientnumber().startsWith("a"));
             csvWriter.flush(); 
 		 }
 		 catch(Exception e1) {
 			 logger.error("writeCSVFile:exception"+ e1.toString());
 		 }
 	 }
-	 
-	 
-	 public static void printconditionally(List<Client> c,Conditionally condition)
-	 {
-		 for(Client c1:c)
-		 {
-			 if(condition.test(c1))
-			 System.out.println(c1.getClientnumber());
-		 }
-	 }
-	 
-		
-	
-}
+	}

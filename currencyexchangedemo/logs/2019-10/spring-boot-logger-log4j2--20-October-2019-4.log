@@ -1,0 +1,60 @@
+2019-10-20 21:07:08,477 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CurrencyexchangedemoApplication on LAPTOP-AJTV0JIH with PID 17320 (C:\deepa\ProjectDemo\Mia\currencyexchangedemo\currencyexchangedemo\target\classes started by jadha in C:\deepa\ProjectDemo\Mia\currencyexchangedemo\currencyexchangedemo)
+2019-10-20 21:07:08,477 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-10-20 21:07:09,396 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-20 21:07:09,412 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15ms. Found 1 repository interfaces.
+2019-10-20 21:07:09,534 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbf6b1f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-20 21:07:10,236 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9000 (http)
+2019-10-20 21:07:10,237 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9000"]
+2019-10-20 21:07:10,237 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-10-20 21:07:10,238 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-20 21:07:10,351 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-10-20 21:07:10,352 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1872 ms
+2019-10-20 21:07:10,413 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2019-10-20 21:07:10,449 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2019-10-20 21:07:10,458 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-20 21:07:10,495 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-20 21:07:10,631 INFO o.h.t.s.i.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@178be0f7'
+2019-10-20 21:07:10,632 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-20 21:07:10,693 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-10-20 21:07:10,820 INFO o.h.h.i.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-10-20 21:07:11,077 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 21:07:11,088 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-20 21:07:11,336 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9000"]
+2019-10-20 21:07:11,347 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9000 (http) with context path ''
+2019-10-20 21:07:11,349 INFO o.s.b.StartupInfoLogger [restartedMain] Started CurrencyexchangedemoApplication in 2.947 seconds (JVM running for 6839.366)
+2019-10-20 21:07:11,354 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2019-10-20 21:16:31,151 INFO o.s.s.c.ExecutorConfigurationSupport [Thread-17] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-20 21:16:31,169 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-17] Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-10-20 21:16:31,184 INFO o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl [Thread-17] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-10-20 21:16:31,231 WARN o.s.b.f.s.DisposableBeanAdapter [Thread-17] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
+2019-10-20 21:16:31,232 INFO c.z.h.HikariDataSource [Thread-17] HikariPool-4 - Shutdown initiated...
+2019-10-20 21:16:31,247 INFO c.z.h.HikariDataSource [Thread-17] HikariPool-4 - Shutdown completed.
+2019-10-20 21:16:32,007 INFO o.s.b.StartupInfoLogger [restartedMain] Starting CurrencyexchangedemoApplication on LAPTOP-AJTV0JIH with PID 17320 (C:\deepa\ProjectDemo\Mia\currencyexchangedemo\currencyexchangedemo\target\classes started by jadha in C:\deepa\ProjectDemo\Mia\currencyexchangedemo\currencyexchangedemo)
+2019-10-20 21:16:32,008 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-10-20 21:16:32,444 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-20 21:16:32,460 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 15ms. Found 1 repository interfaces.
+2019-10-20 21:16:32,545 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bbf6b1f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-20 21:16:32,781 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 9000 (http)
+2019-10-20 21:16:32,783 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-9000"]
+2019-10-20 21:16:32,783 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-10-20 21:16:32,783 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-10-20 21:16:32,797 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2019-10-20 21:16:32,797 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 786 ms
+2019-10-20 21:16:32,834 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2019-10-20 21:16:32,838 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2019-10-20 21:16:32,844 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-20 21:16:32,857 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-10-20 21:16:32,920 INFO o.h.t.s.i.SchemaCreatorImpl [restartedMain] HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@178be0f7'
+2019-10-20 21:16:32,921 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-20 21:16:32,928 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-10-20 21:16:32,972 INFO o.h.h.i.QueryTranslatorFactoryInitiator [restartedMain] HHH000397: Using ASTQueryTranslatorFactory
+2019-10-20 21:16:33,053 INFO o.s.s.c.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-20 21:16:33,058 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-20 21:16:33,177 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-9000"]
+2019-10-20 21:16:33,182 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 9000 (http) with context path ''
+2019-10-20 21:16:33,184 INFO o.s.b.StartupInfoLogger [restartedMain] Started CurrencyexchangedemoApplication in 1.234 seconds (JVM running for 7401.201)
+2019-10-20 21:16:33,186 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
